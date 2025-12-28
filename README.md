@@ -6,6 +6,9 @@ It is an online food delivery system that enables customers to order food from a
 # Full Nmae and studentID:
 No.      Name                          Id
 1.   Seada Hussen                   1692/16
-2.   seid mohammed                  1714/16
-3.   seid dereje                    1707/16
-4.   nefisa hussen  (nefisahusen-github)                4232/16
+2.   Seid Mohammed                  1714/16
+3.   Seid Dereje                    1707/16
+4.   Nefisa Hussen                  4232/16
+
+## GitHub username : 
+1. Seid Mohammed - seidmd-pro
