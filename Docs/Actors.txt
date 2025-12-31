@@ -1,0 +1,14 @@
+
+## Actors
+
+### Primary Actors (Human Users)
+1. **Customer** - Registered users who can browse restaurants, place orders, make payments, and track deliveries
+2. **Guest Customer** - Unregistered users with limited browsing capabilities (view restaurants and menus)
+3. **Restaurant Manager** - Users who manage restaurant profiles, menus, orders, and business analytics
+4. **Delivery Driver** - Users responsible for picking up and delivering orders to customers
+5. **System Administrator** - Users with administrative privileges to manage the entire platform
+
+### Secondary Actors (External Systems)
+6. **Payment Gateway (telebirr)** - External service for processing secure payments
+7. **Uber Eats API** - External service providing additional delivery options and expanded coverage
+8. **Google Maps API** - External service for location services, geocoding, and route optimization
