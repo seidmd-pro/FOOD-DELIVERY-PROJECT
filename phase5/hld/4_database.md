@@ -90,4 +90,4 @@ CHECK (unit_price >= 0),
 CHECK (subtotal = quantity \* unit_price)
 END TABLE
 
-this all the database schema
+
