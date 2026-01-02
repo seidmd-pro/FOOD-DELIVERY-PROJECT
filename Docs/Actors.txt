@@ -1,89 +1,14 @@
 
-         ## Actors
-         
- Actor is anything that interacts with the system.
-Actors can be:
-  - People (users of the app)
-  - Other systems or APIs (external services your system depends on)
+## Actors
 
 ### Primary Actors (Human Users)
-1. Customer :
-- Registered users who can browse restaurants, place orders, make payments, and track deliveries
- Who they are: Registered users with an account.
- What they can do:
-    - Browse restaurants and menus
-    - Add food to cart
-    - Place orders
-    - Make payments
-    - Track order status and delivery
-    - View order history
-
-2. Guest Customer :
-- Unregistered users with limited browsing capabilities (view restaurants and menus)
-Who they are: Users without an account.
-
-What they can do:
-   - View restaurants
-   - View menus
-   - Check prices and availability
-Limitations:
-   - Cannot place orders
-   - Cannot make payments
-   - Cannot track deliveries
-
-3. Restaurant Manager :
-- Users who manage restaurant profiles, menus, orders, and business analytics
-
-Who they are: Owners or staff managing a restaurant on the platform.
-
-What they can do:
-     - Create and update restaurant profiles
-     - Add, edit, or remove menu items
-     - Accept or reject orders
-     - Update order status (preparing, ready, etc.)
-     - View sales reports and analytics
-
-4. Delivery Driver :
-- Users responsible for picking up and delivering orders to customers
-Who they are: People responsible for delivering food.
-
-What they can do:
-    - Accept delivery requests
-    - View pickup and drop-off locations
-    - Update delivery status (picked up, on the way, delivered)
-    - Use navigation tools
-
-5. System Administrator :
- - Users with administrative privileges to manage the entire platform
-Who they are: Platform administrators (not normal users).
-
-What they can do:
-       - Manage user accounts (customers, drivers, restaurants)
-       - Handle complaints and disputes
-       - Monitor system performance
-       - Control platform rules and permissions
-       - Ensure security and reliability
+1. **Customer** - Registered users who can browse restaurants, place orders, make payments, and track deliveries
+2. **Guest Customer** - Unregistered users with limited browsing capabilities (view restaurants and menus)
+3. **Restaurant Manager** - Users who manage restaurant profiles, menus, orders, and business analytics
+4. **Delivery Driver** - Users responsible for picking up and delivering orders to customers
+5. **System Administrator** - Users with administrative privileges to manage the entire platform
 
 ### Secondary Actors (External Systems)
-
-6. Payment Gateway (telebirr) :
-- External service for processing secure payments
-
-What it does:
-      - Processes payments securely
-      - Handles transactions and confirmations
-      - Prevents fraud
-
-7. Uber Eats API :
-- External service providing additional delivery options and expanded coverage
-What it does:
-     - Provides extra delivery drivers
-     - Expands delivery coverage
-     - Handles delivery logistics when internal drivers aren’t available
-
-8. Google Maps API :
-- External service for location services, geocoding, and route optimization
-What it does:
-     - Converts addresses into coordinates (geocoding)
-     - Shows restaurant and customer locations
-     - Calculates routes and delivery time estimates
+6. **Payment Gateway (telebirr)** - External service for processing secure payments
+7. **Uber Eats API** - External service providing additional delivery options and expanded coverage
+8. **Google Maps API** - External service for location services, geocoding, and route optimization
