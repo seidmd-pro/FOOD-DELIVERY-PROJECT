@@ -1,41 +1,28 @@
-# 1. System Architecture Design (HLD)
+# High-Level System Architecture
 
 ## Overview
-The KochaEats Food Delivery System follows a **multi-tier web architecture** designed for scalability,
-security, and maintainability.
+The Food Delivery System is a web-based application that allows customers to browse restaurants, place food orders, and track deliveries. The system follows a layered architecture to ensure scalability, maintainability, and security.
 
-## Architecture Type
+## Architecture Style
 - Client–Server Architecture
-- Modular Monolithic (Frontend + Backend Logic + Data Layer)
-- Service-oriented internal structure
+- Layered Architecture
 
-## Components
-1. Client Layer (Web Browser)
-2. Application Layer
-3. Data Layer
-4. External Services
+## Main Components
+1. Presentation Layer (Frontend)
+2. Application Layer (Backend / Business Logic)
+3. Data Layer (Database)
+4. External Services (Payment & Notification)
 
-## Architecture Diagram
-**Figure 1:** Overall System Architecture  
-_(Insert Architecture Diagram Image here)_
+## Architecture Diagram Description
+- Users interact with the system through a web or mobile interface.
+- Requests are sent to the backend server via REST APIs.
+- The backend processes business logic and communicates with the database.
+- Notifications and payment services are handled by external APIs.
 
-## Component Description
+## Non-Functional Requirements
+- Scalability
+- Security
+- Performance
+- Availability
 
-### Client Layer
-- Web browser (HTML, CSS, JavaScript)
-- Handles UI, language switching, cart interaction
-
-### Application Layer
-- Business logic (cart, order, coupon, authentication)
-- State management (AppState class)
-- Validation & security helpers
-
-### Data Layer
-- Local Storage (users, cart, orders)
-- Database (future backend support)
-
-### External Services
-- Google Maps (delivery location)
-- Payment gateways (Telebirr, CBE, Amole)
-- Notification system
-![alt text](<Screenshot 2025-12-27 071043-2.png>)
+fig 1.1  ![architecture diagram that are found in phase5 images diagram ](<../../phase 5 images diagram/systemarchitecture diagram.png>)
