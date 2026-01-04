@@ -1,25 +1,28 @@
-# 4. High-Level Database Design (HLD)
+# Data Flow Diagram (DFD)
 
-## Overview
-The database is designed to support users, restaurants, menus, orders, payments, and delivery.
+## Level 0 DFD (Context Diagram)
+- User sends request to Food Delivery System
+- System processes the request and responds with results
 
-## High-Level Entities
-- User
-- Restaurant
-- MenuItem
-- Order
-- OrderItem
-- Coupon
-- Payment
-- Delivery
+## Level 1 DFD
 
-## Database Diagram
-**Figure 5:** High-Level ER Diagram  
-_(Insert ER Diagram Image here)_
+### Process 1: User Authentication
+- Input: Username, Password
+- Output: Authentication status
 
-## Key Relationships
-- User places Order
-- Restaurant provides MenuItem
-- Order contains OrderItems
-- Order uses Coupon
-- Order has Payment and Delivery
+### Process 2: Order Processing
+- Input: Selected food items
+- Output: Order confirmation
+
+### Process 3: Payment Processing
+- Input: Payment details
+- Output: Payment success/failure
+
+### Process 4: Delivery Tracking
+- Input: Order ID
+- Output: Delivery status
+
+## Data Stores
+- User Database
+- Order Database
+- Restaurant Database
