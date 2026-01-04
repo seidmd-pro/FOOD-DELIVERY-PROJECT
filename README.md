@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+=======
 # Project Title: FOOD DELIVERY
 
 # Description for Food Delivery Project:
@@ -17,3 +20,4 @@ No.      Name                          Id
 2. Seada Hussen  - rimas68
 3. Seid Dereje   - abuzubeir1234
 4. Nefisa hussen - hayat3650 
+>>>>>>> 2e698f705fd75dfdbe08cd902e3600b5761fe14e
