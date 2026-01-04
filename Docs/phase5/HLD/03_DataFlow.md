@@ -1,27 +1,28 @@
-# 3. Data Flow Diagram (HLD)
+# Data Flow Diagram (DFD)
 
-## Overview
-This section describes how data flows through the KochaEats system.
+## Level 0 DFD (Context Diagram)
+- User sends request to Food Delivery System
+- System processes the request and responds with results
 
-## Level 0 (Context Diagram)
-- User interacts with KochaEats System
-- System communicates with Payment and Map Services
+## Level 1 DFD
 
-**Figure 3:** DFD Level 0  
-_(Insert DFD Level 0 Image here)_
+### Process 1: User Authentication
+- Input: Username, Password
+- Output: Authentication status
 
-## Level 1 Data Flow
-1. User selects restaurant
-2. Menu data retrieved
-3. Items added to cart
-4. Coupon applied
-5. Payment processed
-6. Order stored and tracked
+### Process 2: Order Processing
+- Input: Selected food items
+- Output: Order confirmation
 
-**Figure 4:** DFD Level 1  
-_(Insert DFD Level 1 Image here)_
+### Process 3: Payment Processing
+- Input: Payment details
+- Output: Payment success/failure
+
+### Process 4: Delivery Tracking
+- Input: Order ID
+- Output: Delivery status
 
 ## Data Stores
-- User Data Store
-- Order Data Store
-- Restaurant & Menu Store
+- User Database
+- Order Database
+- Restaurant Database
