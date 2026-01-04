@@ -1,93 +1,92 @@
 
-## Functional Requirements (Use Cases)
+ Functional Requirements (Use Cases)
 
-### UC-01: Register User
+UC-01: Register User
  Primary Actor:  Guest Customer  
  Description: Allow new users to create accounts in the system  Preconditions:  User has internet access  
  Postconditions:  User account is created and confirmation email is sent  
-
-### UC-02: Login
+UC-02: Login
  Primary Actor: Customer, Restaurant Manager, Delivery Driver, System Administrator  
  Description: Authenticate users and provide access to system features  
  Preconditions: User has valid account credentials  
  Postconditions: User is authenticated and redirected to appropriate dashboard  
 
-### UC-03: Browse Restaurants
-Primary Actor: Customer, Guest Customer  
-Description: View available restaurants with filtering and search capabilities  
-Preconditions: System has active restaurants  
-Postconditions: List of restaurants is displayed based on search criteria  
+ UC-03: Browse Restaurants
+      Primary Actor: Customer, Guest Customer  
+       Description: View available restaurants with filtering and search capabilities  
+       Preconditions: System has active restaurants  
+       Postconditions: List of restaurants is displayed based on search criteria  
 
-### UC-04: View Menu
-Primary Actor: Customer, Guest Customer  
-**Description: Display restaurant menu items with prices and details  
+ UC-04: View Menu
+ Primary Actor: Customer, Guest Customer  
+Description: Display restaurant menu items with prices and details  
 Preconditions:** Restaurant has active menu items  
 Postconditions:** Complete menu with prices and availability is shown  
 
-### UC-05: Place Order
+ UC-05: Place Order
 Primary Actor: Customer  
 Description: Add items to cart, validate order, and submit for processing  
 Preconditions: Customer is logged in and has items in cart  
 Postconditions: Order is created and restaurant is notified  
 
-### UC-06: Make Payment
+UC-06: Make Payment
 Primary Actor: Customer  
 Secondary Actor: Payment Gateway (telebirr)  
 Description: Process secure payment for placed orders  
-**Preconditions: Valid order exists and payment method is available  
+Preconditions: Valid order exists and payment method is available  
 Postconditions: Payment is processed and order status is updated  
 
-### UC-07: Track Order
+ UC-07: Track Order
 Primary Actor: Customer  
 Secondary Actor: Google Maps API  
 Description: Provide real-time order status and delivery tracking  
 Preconditions: Order exists and is in progress  
 Postconditions: Current order status and location information is displayed  
 
-### UC-08: Rate Restaurant
+ UC-08: Rate Restaurant
 Primary Actor: Customer  
 Description: Submit ratings and reviews for completed orders  
 Preconditions: Customer has completed order from restaurant  
 Postconditions: Rating is recorded and restaurant average is updated  
 
-### UC-09: Manage Restaurant Profile
-**Primary Actor: Restaurant Manager  
+ UC-09: Manage Restaurant Profile
+Primary Actor: Restaurant Manager  
 Description: Update restaurant information, menu items, and operating hours  
 Preconditions: Restaurant Manager is authenticated  
 Postconditions: Restaurant profile is updated and customers are notified  
 
-### UC-10: View Reports
+ UC-10: View Reports
 Primary Actor: Restaurant Manager  
 Description: Generate and view business analytics and sales reports  
 Preconditions: Restaurant Manager is authenticated and has order history  
 Postconditions: Reports are generated and displayed in requested format  
 
-### UC-11: Manage Users
+UC-11: Manage Users
 Primary Actor: System Administrator  
 Description: Administer user accounts, handle disputes, and manage platform security  
 Preconditions: System Administrator is authenticated  
 Postconditions: User management actions are completed and logged  
 
-### UC-12: Update Delivery Status
+ UC-12: Update Delivery Status
 Primary Actor: Delivery Driver  
 Secondary Actor: Google Maps API  
 Description: Update order delivery status and provide location tracking  
 Preconditions: Delivery Driver is assigned to an order  
 Postconditions: Order status is updated and customers/restaurants are notified  
 
-## Use Case Relationships
+ Use Case Relationships
 
-### Include Relationships
+ Include Relationships
 Place Orderincludes View Menu (must view menu to place order)
 Make Payment includes Place Order (payment follows order placement)
 Track Order includes Make Payment (tracking available after payment)
 Rate Restaurant includes Track Order (rating available after delivery)
 
-### Extend Relationships
+Extend Relationships
 Browse Restaurants extends to View Menu (optional menu viewing while browsing)
 Register User extends Login (new users may register during login process)
 Manage Restaurant Profile extends View Reports (profile updates may trigger report viewing)
 
-### Generalization Relationships
+ Generalization Relationships
 Customer and  Guest Customer  generalize to  User
 Restaurant Manager , Delivery Driver , and  System Administrator generalize to Authenticated 
