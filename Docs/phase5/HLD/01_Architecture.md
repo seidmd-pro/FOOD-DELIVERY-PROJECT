@@ -24,5 +24,3 @@ The Food Delivery System is a web-based application that allows customers to bro
 - Security
 - Performance
 - Availability
-
-fig 1.1  ![architecture diagram that are found in phase5 images diagram ](<../../phase 5 images diagram/systemarchitecture diagram.png>)
